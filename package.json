@@ -1,0 +1,38 @@
+{
+  "name": "js-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "prettier": "^1.10.2"
+  },
+  "eslintConfig": {
+    "extends": ["airbnb-base", "prettier"],
+    "rules": {
+      "no-restricted-syntax": [
+        "error",
+        "ForInStatement",
+        "LabeledStatement",
+        "WithStatement"
+      ],
+      "no-underscore-dangle": [0],
+      "no-unused-vars": [
+        "error",
+        { "vars": "all", "args": "none", "ignoreRestSiblings": false }
+      ]
+    }
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  }
+}
